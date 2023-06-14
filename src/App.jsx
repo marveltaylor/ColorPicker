@@ -1,4 +1,7 @@
 // Write your Color component here
+const Color = (props) => {
+  return <div className="red"></div>
+}
 
 const App = () => {
   return (
