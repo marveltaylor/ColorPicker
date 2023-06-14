@@ -11,7 +11,7 @@ const App = () => {
         <div className="red">red</div>
       </div>
       <div id="colors-list">
-        <Color />
+        <Color color="green"/>
         <Color />
         <Color />
       </div>
