@@ -17,9 +17,9 @@ const App = () => {
         <div className = {selectedColor}>{selectedColor}</div>
       </div>
       <div id = "colors-list">
-        <Color color = "green"/>
-        <Color color = "blue"/>
-        <Color color = "violet"/>
+        <Color color = "green" setSelectedColor = {setSelectedColor}/>
+        <Color color = "blue" setSelectedColor = {setSelectedColor}/>
+        <Color color = "violet" setSelectedColor = {setSelectedColor}/>
       </div>
     </div>
   );
