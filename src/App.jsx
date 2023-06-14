@@ -13,7 +13,7 @@ const App = () => {
       <div id="colors-list">
         <Color color="green"/>
         <Color color="blue"/>
-        <Color />
+        <Color color="violet"/>
       </div>
     </div>
   );
