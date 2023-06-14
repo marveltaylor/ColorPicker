@@ -1,3 +1,5 @@
+import { useState } from "react"; //import useState hook from React
+
 // Write your Color component here
 const Color = (props) => {
   return <div className = {props.color}></div> //using dot notation use prop as className to access color from props object
