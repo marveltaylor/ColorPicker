@@ -1,6 +1,9 @@
 // Write your Color component here
 const Color = (props) => {
-  return <div className = {props.color}></div>
+  return <div className = {props.color}></div> //using dot notation use prop as className to access color from props object
+//  const Color = ({color}) => { //using object deconstruction to access the color from props object
+//   return <div className = {color}></div>
+//   }
 }
 
 const App = () => {
