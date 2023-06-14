@@ -6,8 +6,8 @@ import { useState } from "react"; //import useState hook from React
 const Color = ({color, setSelectedColor}) => { //using object deconstruction to access the color from props object
   return (
   <div className = {color} onClick = {() => setSelectedColor(color)}></div> //added onClick property using object deconstruction
-  )
-}
+  );
+};
 
 const App = () => {
 const [selectedColor, setSelectedColor] = useState(""); //invoke useState hook and deconstruct selectedColor and setSelectedColor from the returned array
@@ -23,6 +23,16 @@ const [selectedColor, setSelectedColor] = useState(""); //invoke useState hook a
         <Color color = "violet" setSelectedColor = {setSelectedColor}/>
       </div>
     </div>
+  );
+};
+
+const Selected = () => {
+  const [isSelected, setIsSelected] = useState(false);
+  return (
+    <div className = {isSelected ? "selected" : "not-selected"}
+        onClick = {() => setIsSelected(!isSelected)}
+        >
+        </div>
   );
 };
 
