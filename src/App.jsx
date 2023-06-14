@@ -10,7 +10,11 @@ const App = () => {
         <div>Currently selected: </div>
         <div className="red">red</div>
       </div>
-      <div id="colors-list">{/* colors go here */}</div>
+      <div id="colors-list">
+        <Color />
+        <Color />
+        <Color />
+      </div>
     </div>
   );
 };
